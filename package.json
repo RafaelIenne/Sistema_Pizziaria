@@ -1,0 +1,20 @@
+{
+  "name": "home",
+  "version": "1.0.0",
+  "description": "Sistema de Vendas Mensais de Pizzaria",
+  "main": "dist/mensal.js",
+  "scripts": {
+    "start": "npm run build && lite-server",
+    "build": "tsc",
+    "dev": "concurrently \"tsc --watch\" \"lite-server\""
+  },
+  "keywords": [],
+  "author": "Heitor",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "lite-server": "^2.6.1",
+    "typescript": "^5.9.3"
+  }
+}

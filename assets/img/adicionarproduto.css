@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Signika+Negative:wght@300..700&display=swap');
+
+body {
+font-family: Arial, sans-serif;
+background:#7a0000;
+display:flex;
+justify-content:center;
+padding:30px 0;
+margin:0;
+}
+.container {
+width:95%;
+max-width:800px;
+background:#fff;
+padding:30px 40px;
+border-radius:12px;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+border-top:6px solid #b60000;
+}
+h1,h2 {
+color:#b60000;
+text-align:center;
+}
+h1 {
+margin-bottom:20px;
+}
+label {
+display:block;
+margin-top:15px;
+font-weight:bold;
+}
+input[type="text"], input[type="number"] {
+width:100%;
+padding:10px;
+margin-top:5px;
+border-radius:6px;
+border:1px solid #b60000;
+box-sizing:border-box;
+}
+button {
+margin-top:10px;
+padding:12px;
+border:none;
+border-radius:8px;
+background:#b60000;
+color:#fff;
+font-weight:bold;
+cursor:pointer;
+}
+button:hover {
+background:#000;
+color:#ffd000;
+}
+.lista {
+margin-top:15px;
+background:#fff7f7;
+padding:15px;
+border-radius:8px;
+border:2px solid #b60000;
+max-height:250px;
+overflow-y:auto;
+}
+.item {
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:8px;
+border-bottom:1px solid #9f2727;
+}
+.item:last-child {
+border-bottom:none;
+}
+.item button {
+background:#000;
+color:#ffd000;
+padding:6px 8px;
+border-radius:6px;
+font-weight:bold;
+border:none;
+cursor:pointer;
+}
+.item button:hover {
+background:#ffd000;
+color:#000;
+}
+.voltar {
+display:block;
+text-align:center;
+margin-top:20px;
+padding:12px;
+background:#000;
+color:#ffd000;
+text-decoration:none;
+border-radius:8px;
+}
+.voltar:hover {
+background:#ffd000;
+color:#000;
+}
+.form-row {
+display:flex;
+gap:10px;
+align-items:center;
+}
+.form-row > * {
+flex:1;
+}
+.small {
+flex:0.5;
+}

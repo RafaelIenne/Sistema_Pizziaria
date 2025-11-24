@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "ES6",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    
+    // Adição opcional para garantir que o compilador encontre as dependências do Node.js
+    "moduleResolution": "node" 
+  },
+  "include": [
+    "src/**/*" // Inclui todos os arquivos TS dentro da pasta 'src'
+  ],
+  "exclude": [
+    "node_modules" // Garante que ele não tente compilar arquivos dentro da pasta de dependências
+  ]
+}

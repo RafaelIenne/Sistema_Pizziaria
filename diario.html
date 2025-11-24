@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Vendas</title>
+    <link rel="stylesheet" href="assets/diario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Venda Diária</h1>
+        <label for="data-selecionada">Selecione a Data:</label>
+        <input type="date" id="data-selecionada" class="form-control mb-3"> 
+        <h2>Relatório</h2>
+        <div class="lista" id="lista"></div>
+
+        <button id="apagar" class="btn-apagar">Apagar Todas as Vendas</button>
+        <a href="index.html" class="voltar">→ Voltar para Home</a>
+    </div>
+
+    <script type="module" src="dist/diario.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Produtos - Veneza Pizza</title>
+    <link rel="stylesheet" href="assets/img/adicionarproduto.css">
+</head>
+<body>
+<div class="container">
+    <h1>🍕 Gerenciar Produtos - Veneza Pizza</h1>
+
+    <h2>Sabores de Pizza</h2>
+    <label for="novo-sabor">Novo sabor:</label>
+    <div class="form-row">
+        <input id="novo-sabor" type="text" placeholder="Digite o sabor">
+        <button type="button" id="btn-adicionar-sabor">Adicionar Sabor</button>
+    </div>
+    <div class="lista" id="lista-sabores" aria-live="polite"></div>
+
+    <hr>
+
+    <h2>Bebidas</h2>
+    <label for="nova-bebida">Nova bebida:</label>
+    <div class="form-row">
+        <input id="nova-bebida" type="text" placeholder="Nome da bebida">
+        <input id="preco-bebida" class="small" type="text" placeholder="0,00">
+        <button type="button" id="btn-adicionar-bebida">Adicionar Bebida</button>
+    </div>
+    <div class="lista" id="lista-bebidas" aria-live="polite"></div>
+
+    <a href="index.html" class="voltar">⬅ Voltar para Pedido</a>
+</div>
+
+<script src="dist/adicionarproduto.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+📦 Sistema de Vendas Mensais de Pizzaria
+
+Sistema desenvolvido em HTML, CSS e TypeScript, com live-reload e compilação automática usando lite-server e TypeScript watch via concurrently.
+
+Este guia permite que qualquer pessoa rode o sistema apenas com o VS Code e o terminal, mesmo sem conhecimento prévio.
+
+🔧 1. Requisitos
+
+Antes de tudo, a pessoa precisa ter instalado:
+
+✔ Node.js (versão 16+)
+
+Download no site oficial.
+
+Para verificar:
+
+node -v
+npm -v
+
+
+Se aparecerem os números das versões, está funcionando.
+
+📁 2. Baixar o Projeto
+
+No terminal do VS Code:
+
+git clone <URL_DO_SEU_REPOSITORIO>
+cd nome-do-projeto
+
+
+(Se o usuário não tiver Git, pode simplesmente baixar o ZIP do GitHub e extrair.)
+
+📦 3. Instalar Dependências
+
+Muito importante: este comando instala tudo o que é necessário para rodar o npm run dev.
+
+No terminal:
+
+npm install
+
+
+Esse comando instala:
+
+typescript → para compilar o TypeScript
+
+lite-server → servidor web com live reload
+
+concurrently → permite rodar dois comandos ao mesmo tempo
+
+outras dependências internas do npm
+
+Tudo isso está listado no package.json.
+
+▶️ 4. Como Rodar o Projeto
+
+Após instalar tudo, basta:
+
+npm run dev
+
+
+Esse comando faz:
+
+✔ 1. Rodar TypeScript em modo observação
+tsc --watch
+
+✔ 2. Iniciar o servidor web
+lite-server
+
+✔ 3. Recarregar automaticamente o navegador quando você salvar um arquivo
+
+O navegador será aberto automaticamente com algo como:
+
+http://localhost:3000
+
+📂 5. Estrutura do Projeto
+├── assets/               # Imagens / CSS / JS
+├── dist/                 # Arquivos compilados do TypeScript
+├── src/                  # Arquivos .ts
+├── adicionarproduto.html
+├── cadastro.html
+├── diario.html
+├── mensal.html
+├── index.html
+├── package.json
+├── tsconfig.json
+└── README.md
+
+🔨 6. Scripts disponíveis
+▶️ Desenvolvimento com live reload
+npm run dev
+
+▶️ Compilar manualmente o TypeScript
+npm run build
+
+▶️ Rodar apenas o servidor (sem watch)
+npm start
+
+🧱 7. Como editar o código
+
+Abra o projeto no VS Code:
+
+File → Open Folder → selecione a pasta do projeto
+
+
+Edite os arquivos em:
+
+src/*.ts → código TypeScript
+
+dist/*.js → gerado automaticamente
+
+*.html → páginas do sistema
+
+assets/ → CSS e imagens
+
+❗ 8. Problemas comuns
+❌ “tsc: command not found”
+
+Solução:
+
+npm install
+
+❌ “lite-server: command not found”
+
+Solução:
+
+npm install
+
+❌ Browser não abre automaticamente
+
+Abra manualmente:
+
+http://localhost:3000
+
+✔️ 9. Pronto!
+
+Seguindo este README, QUALQUER pessoa consegue:
+
+Abrir o VS Code
+
+Abrir o terminal
+
+Rodar:
+
+npm install
+npm run dev
+
+
+E o sistema abre funcionando.

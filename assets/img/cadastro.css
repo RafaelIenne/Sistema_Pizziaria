@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-style: normal; 
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: darkred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.form-image {
+  width: 50%;
+  background-color: rgb(252, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.form-image img {
+  height: 31rem;
+  border-radius: 8px;
+}
+
+.form {
+  width: 50%;
+  background-color: #d01717;
+  padding: 2rem;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  color: #fff;
+}
+
+.form::-webkit-scrollbar {
+  width: 7px;
+}
+
+.form::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 30, 0);
+  border-radius: 10px;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.login-button button,
+.submit-btn button {
+  border: none;
+  background-color: rgb(252, 21, 21);
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease;
+  font-weight: 600;
+  font-family: 'Signika Negative', sans-serif;
+  color: #000;           
+  outline: none;
+}
+
+.login-button button:hover,
+.submit-btn button:hover {
+  background-color: #000000;
+  color: rgb(255, 0, 0);
+}
+
+.login-button button:focus,
+.submit-btn button:focus {
+  background-color: #000000;
+  color: rgb(255, 0, 0);
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.1);
+}
+
+.login-button button:active,
+.submit-btn button:active {
+  background-color: #000000;
+  color: rgb(255, 0, 0);
+  transform: translateY(1px);
+}
+
+.login-button button a,
+.submit-btn button a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box label {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.input-box input,
+.input-box select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+}
+
+.input-box input:hover {
+  background-color: rgb(233, 237, 238);
+}
+
+.form-header h1::after {
+  content: '';
+  display: block;
+  width: 22rem;
+  height: 0.3rem; 
+  background-color: #000;
+  margin: 0.5rem auto 0 auto;
+  border-radius: 10px;
+}
+
+#confirmacao {
+  display: none;
+  width: 50%;
+  height: 80vh;
+  background: linear-gradient(135deg, #000000, #ab0000);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffcc00;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#confirmacao .card,
+#historico .card {
+  background-color: #ffffff;
+  padding: 40px 60px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px black;
+  text-align: center;
+  max-width: 500px;
+  margin: auto;
+  animation: scaleUp 0.6s ease-in-out;
+}
+
+#confirmacao .card h4 {
+  font-size: 1.2rem;       
+  color: #ff0000;          
+  margin-top: 2rem;        
+  margin-bottom: 0.8rem;
+}
+
+#confirmacao .card p:first-of-type {
+  color: rgba(0, 0, 0, 0.2); 
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#confirmacao .card p,
+#historico .card p,
+#historico .card h5 {
+  font-family: inherit;
+  font-size: 1rem;
+  color: black !important; 
+  margin: 0.25rem 0;
+}
+
+#historico {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(135deg, #000000, #b30000);
+  color: #fff;
+  width: 50%;
+  height: 80vh;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  overflow-y: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#historico h2 {
+  color: #ffcc00;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.novo-pedido-btn,
+#historico .sair-btn {
+  background-color: rgb(252, 21, 21);
+  color: #000;
+  font-family: 'Signika Negative', sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.novo-pedido-btn:hover,
+#historico .sair-btn:hover {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #000;
+  color: gold;
+  transform: scale(1.05);
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.logo {
+  width: 50%; 
+  background: #b30000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.content {
+  width: 50%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-confirmar {
+    margin-top: 25px;  
+}
+
+.checkbox-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-right input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #ffcc00; 
+}
+
+.checkbox-right label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#confirmacao {
+  display: none;
+  width: 50%;
+  height: 80vh;
+  background: linear-gradient(135deg, #000000, #ab0000);
+  color: #ffcc00;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#confirmacao::-webkit-scrollbar {
+  width: 7px;
+}
+
+#confirmacao::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 5px;
+}
+
+#confirmacao .card {
+  margin: 20px auto;
+  max-height: none;
+}
