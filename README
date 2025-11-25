@@ -31,8 +31,8 @@ Se aparecerem os números das versões, está funcionando.
 
 No terminal do VS Code:
 
-git clone <URL_DO_SEU_REPOSITORIO>
-cd nome-do-projeto
+git clone https://github.com/RafaelIenne/Sistema_Pizziaria
+cd Sistema_Pizziaria
 
 
 (Se o usuário não tiver Git, pode simplesmente baixar o ZIP do GitHub e extrair.)
